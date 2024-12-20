@@ -24,7 +24,7 @@ Plugin:
 ```shell
 asdf plugin add cls3
 # or
-asdf plugin add cls3 https://github.com/xavbourdeau/asdf-cls3.git
+asdf plugin add cls3 https://github.com/xavbourdeau/cls3-asdf-plugin.git
 ```
 
 cls3:
