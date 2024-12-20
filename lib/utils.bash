@@ -37,8 +37,10 @@ download_release() {
 	local version filename url
 	version="$1"
 	filename="$2"
+	os=$(uname -s)
+	arch=$(uname -m)
 
-	url="https://github.com/go-to-k/cls3/releases/download/v${version}/cls3_${version}_Darwin_x86_64.tar.gz"
+	url="https://github.com/go-to-k/cls3/releases/download/v${version}/cls3_${version}_${os}_${arch}.tar.gz"
 
 	echo "* Downloading $TOOL_NAME release $version..."
 	curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
